@@ -1,0 +1,20 @@
+# we are going to make an environment which all the required libaries can be in it.
+#
+# for activting the environemnt in Ubuntu 
+$ source bin/activate
+
+# for making a new project in django 
+$django-admin startproject [name of project, e.g., blog_project] . # . will be used for making a project in the working directory
+
+# file manage.py will assign all the commands for the made project
+#
+# now we are going to make an app after making a django project
+$python manage.py startapp [name of app, e.g., posts]
+
+# now the aim is making a database
+$python manage.py migrate 
+
+# now we can check the project to see it works
+$python manage.py runserver
+
+
